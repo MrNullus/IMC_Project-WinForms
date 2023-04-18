@@ -9,3 +9,16 @@ D:\Projetos\C#\IMC Project\IMC Project\obj\Debug\IMC Project.csproj.GenerateReso
 D:\Projetos\C#\IMC Project\IMC Project\obj\Debug\IMC Project.csproj.CoreCompileInputs.cache
 D:\Projetos\C#\IMC Project\IMC Project\obj\Debug\IMC Project.exe
 D:\Projetos\C#\IMC Project\IMC Project\obj\Debug\IMC Project.pdb
+C:\Users\Etec\Source\Repos\Mus4ng\IMC_Project-WinForms\IMC Project\bin\Debug\IMC Project.exe.config
+C:\Users\Etec\Source\Repos\Mus4ng\IMC_Project-WinForms\IMC Project\bin\Debug\IMC Project.exe
+C:\Users\Etec\Source\Repos\Mus4ng\IMC_Project-WinForms\IMC Project\bin\Debug\IMC Project.pdb
+C:\Users\Etec\Source\Repos\Mus4ng\IMC_Project-WinForms\IMC Project\obj\Debug\IMC Project.csproj.AssemblyReference.cache
+C:\Users\Etec\Source\Repos\Mus4ng\IMC_Project-WinForms\IMC Project\obj\Debug\IMC_Project.CalculadoraIMC.resources
+C:\Users\Etec\Source\Repos\Mus4ng\IMC_Project-WinForms\IMC Project\obj\Debug\IMC_Project.Properties.Resources.resources
+C:\Users\Etec\Source\Repos\Mus4ng\IMC_Project-WinForms\IMC Project\obj\Debug\IMC Project.csproj.GenerateResource.cache
+C:\Users\Etec\Source\Repos\Mus4ng\IMC_Project-WinForms\IMC Project\obj\Debug\IMC Project.csproj.CoreCompileInputs.cache
+C:\Users\Etec\Source\Repos\Mus4ng\IMC_Project-WinForms\IMC Project\obj\Debug\IMC Project.exe
+C:\Users\Etec\Source\Repos\Mus4ng\IMC_Project-WinForms\IMC Project\obj\Debug\IMC Project.pdb
+C:\Users\Etec\Source\Repos\Mus4ng\IMC_Project-WinForms\IMC Project\bin\Debug\System.Drawing.Common.dll
+C:\Users\Etec\Source\Repos\Mus4ng\IMC_Project-WinForms\IMC Project\bin\Debug\System.Drawing.Common.xml
+C:\Users\Etec\Source\Repos\Mus4ng\IMC_Project-WinForms\IMC Project\obj\Debug\IMC Project.csproj.CopyComplete

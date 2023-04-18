@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace IMC_Project
@@ -60,14 +54,14 @@ namespace IMC_Project
                 MessageBox.Show("Informe a sua idade");
                 return;
             }
-            if(numIdade.Value < 5)
+            if (numIdade.Value < 5)
             {
                 MessageBox.Show("Nossa calculadora de IMC só possui precisão a partir dos 5 anos de idade, por favor, insira uma idade de 5 ou mais");
                 return;
             }
 
             //Validações campo: GENERO
-            if(!rdbMasculino.Checked && !rdbFeminino.Checked)
+            if (!rdbMasculino.Checked && !rdbFeminino.Checked)
             {
                 MessageBox.Show("Informe o seu gênero");
                 return;
@@ -92,7 +86,7 @@ namespace IMC_Project
                 case "crianca":
                     {
                         classificacao = calculoClassificacao.Crianca(imc, idade, genero);
-                        diferencaPeso = calculoClassificacao.CriancaDiferencaPesoIdeal(imc,altura,peso,genero);
+                        diferencaPeso = calculoClassificacao.CriancaDiferencaPesoIdeal(imc, altura, peso, genero);
                         dica = true;
                         break;
                     }
@@ -156,7 +150,7 @@ namespace IMC_Project
                 string[] listaClassificacoes = { "Desnutrição Grave", "Desnutrição Aguda", "Normal", "Sobrepeso", "Obesidade" };
                 string classificacaoFinal = string.Empty;
 
-                if(genero == 'm')
+                if (genero == 'm')
                 {
                     switch (idade)
                     {
@@ -193,9 +187,9 @@ namespace IMC_Project
                 float imcIdeal = 0f;
                 float pesoIdeal = 0f;
                 float diferencaPeso = 0f;
-                
 
-                if(genero == 'm')
+
+                if (genero == 'm')
                 {
                     imcIdeal = 16.5f;
                     pesoIdeal = imcIdeal * (altura * altura);
@@ -216,7 +210,7 @@ namespace IMC_Project
                 string[] listaClassificacoes = { "Desnutrição Grave", "Desnutrição Aguda", "Normal", "Sobrepeso", "Obesidade" };
                 string classificacaoFinal = string.Empty;
 
-                if(genero == 'm')
+                if (genero == 'm')
                 {
                     switch (idade)
                     {
@@ -268,7 +262,7 @@ namespace IMC_Project
             public string Adulto(float imc)
             {
                 string[] listaClassificacoes = { "Baixo Peso", "Peso Normal", "Sobrepeso", "Obesidade Grau I", "Obesidade Grau II", "Obesidade Grau III" };
-               
+
                 string classificacaoFinal = imc < 18.5f ? listaClassificacoes[0] : imc >= 18.5 && imc < 25 ? listaClassificacoes[1] : imc >= 25 && imc < 30 ? listaClassificacoes[2] : imc >= 30 && imc < 35 ? listaClassificacoes[3] : imc >= 35 && imc < 40 ? listaClassificacoes[4] : listaClassificacoes[5];
 
                 return classificacaoFinal;
@@ -292,7 +286,7 @@ namespace IMC_Project
                 string[] listaClassificacoes = { "Baixo Peso", "Peso Noramal", "Sobrepeso", "Obesidade" };
 
                 string classificacaoFinal = imc < 23 ? listaClassificacoes[0] : imc >= 23 && imc < 28 ? listaClassificacoes[1] : imc >= 28 && imc < 30 ? listaClassificacoes[2] : listaClassificacoes[3];
-                
+
                 return classificacaoFinal;
             }
 
@@ -312,9 +306,9 @@ namespace IMC_Project
 
         public void LimparCampos()
         {
-            foreach(var item in Controls)
+            foreach (var item in Controls)
             {
-                if(item is MaskedTextBox)
+                if (item is MaskedTextBox)
                 {
                     ((MaskedTextBox)item).Text = string.Empty;
                 }
@@ -326,7 +320,7 @@ namespace IMC_Project
                 {
                     ((RadioButton)item).Checked = false;
                 }
-                
+
                 txtPeso.Mask = "00.00";
                 txtIMC.Text = "0";
                 txtClassificacao.Text = "Nenhuma";
@@ -339,10 +333,10 @@ namespace IMC_Project
         //FRONT-END
         private void txtAltura_Enter(object sender, EventArgs e)
         {
-            if(txtAltura.Text == "Metros")
+            if (txtAltura.Text == "Metros")
             {
                 txtAltura.Text = "";
-                txtAltura.ForeColor = Color.FromArgb(15,15,15);
+                txtAltura.ForeColor = Color.FromArgb(15, 15, 15);
             }
         }
         private void txtAltura_Leave(object sender, EventArgs e)
@@ -359,7 +353,7 @@ namespace IMC_Project
             {
                 int digitCount = txtPeso.Text.Replace(txtPeso.PromptChar.ToString(), "").Length;
 
-                if(digitCount >= 5)
+                if (digitCount >= 5)
                 {
                     txtPeso.Mask = "000.00";
                     txtPeso.Select(txtPeso.Text.Length, 0);
@@ -384,7 +378,6 @@ namespace IMC_Project
             }
         }
 
-
         //IGNORE
         private void label3_Click(object sender, EventArgs e)
         {
@@ -392,13 +385,22 @@ namespace IMC_Project
         }
         private void numIdade_ValueChanged(object sender, EventArgs e)
         {
-
         }
         private void label4_Click(object sender, EventArgs e)
         {
 
         }
         private void lblIMC_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void numIdade_Click(object sender, EventArgs e)
         {
 
         }
